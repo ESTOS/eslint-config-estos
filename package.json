@@ -1,6 +1,6 @@
 {
     "name": "@estos/config-eslint",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Eslint config used at estos",
     "main": "index.js",
     "type": "module",
