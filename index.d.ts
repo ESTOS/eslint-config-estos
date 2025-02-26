@@ -1,2 +1,4 @@
-import {ConfigArray} from "typescript-eslint";
-export default ConfigArray
+import { TSESLint } from '@typescript-eslint/utils';
+
+declare const config: TSESLint.FlatConfig.ConfigArray;
+export { config as default };
