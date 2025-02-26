@@ -1,21 +1,24 @@
 {
-  "name": "@estos/config-eslint",
-  "version": "1.0.0",
-  "description": "Eslint config used at estos",
-  "main": "index.js",
-  "type": "module",
-  "keywords": [],
-  "author": "dominik.kerzel@estos.de",
-  "license": "MIT",
-  "peerDependencies": {
-    "eslint": ">= 9"
-  },
-  "dependencies": {
-    "@eslint/js": "9.21.0",
-    "eslint-config-prettier": "10.0.1",
-    "eslint-plugin-jsdoc": "50.6.3",
-    "eslint-plugin-promise": "7.2.1",
-    "eslint-plugin-unicorn": "57.0.0",
-    "typescript-eslint": "8.25.0"
-  }
+    "name": "@estos/config-eslint",
+    "version": "1.0.0",
+    "description": "Eslint config used at estos",
+    "main": "index.js",
+    "type": "module",
+    "keywords": [
+        "eslint",
+        "dprint"
+    ],
+    "author": "dominik.kerzel@estos.de",
+    "license": "MIT",
+    "peerDependencies": {
+        "eslint": ">= 9"
+    },
+    "dependencies": {
+        "@eslint/js": "9.21.0",
+        "eslint-config-prettier": "10.0.1",
+        "eslint-plugin-jsdoc": "50.6.3",
+        "eslint-plugin-promise": "7.2.1",
+        "eslint-plugin-unicorn": "57.0.0",
+        "typescript-eslint": "8.25.0"
+    }
 }
