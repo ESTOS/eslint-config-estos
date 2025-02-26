@@ -1,5 +1,5 @@
 {
-  "name": "@estos/estos-config-eslint",
+  "name": "@estos/config-eslint",
   "version": "1.0.0",
   "description": "Eslint config used at estos",
   "main": "index.js",
