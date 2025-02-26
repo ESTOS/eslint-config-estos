@@ -19,7 +19,7 @@
 		"jsx.bracketPosition": "nextLine",
 		"jsx.forceNewLinesSurroundingContent": false,
 		"jsx.multiLineParens": "prefer",
-		"memberExpression.linePerExpression": true,
+		"memberExpression.linePerExpression": false,
 		"typeLiteral.separatorKind": "semiColon",
 		"enumDeclaration.memberSpacing": "newLine",
 		"spaceAround": false,
