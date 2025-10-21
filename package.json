@@ -1,6 +1,6 @@
 {
     "name": "@estos/config-eslint",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Eslint config used at estos",
     "main": "index.js",
     "types": "index.d.ts",
@@ -14,6 +14,10 @@
     "peerDependencies": {
         "eslint": ">= 9"
     },
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ESTOS/eslint-config-estos.git"
+	},
     "dependencies": {
         "@eslint/js": "9.21.0",
         "@typescript-eslint/utils": "8.25.0",

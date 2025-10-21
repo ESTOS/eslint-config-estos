@@ -61,7 +61,7 @@ const config = tsLint.config(
             "@typescript-eslint/no-use-before-define": "error",
             "@typescript-eslint/no-misused-new": "error",
             "@typescript-eslint/no-floating-promises": "error",
-            "@typescript-eslint/no-misused-promises": ["error", { checksVoidReturn: { arguments: false } }],
+            "@typescript-eslint/no-misused-promises": ["error", { checksVoidReturn: false }],
             "@typescript-eslint/no-confusing-void-expression": "error",
             "@typescript-eslint/no-for-in-array": "error",
             "@typescript-eslint/no-unnecessary-type-arguments": "error",
@@ -112,7 +112,27 @@ const config = tsLint.config(
 
             // #################################################
             // jsdoc
-            "jsdoc/require-returns": 0,
+            "jsdoc/check-indentation": "warn",
+            "jsdoc/check-syntax": "warn",
+            "jsdoc/tag-lines": ["error", "any", {"startLines":1, "tags":{"param":{"lines":"never"}}}],	// ensure an empty line between comment and parameters
+            "jsdoc/require-description": "warn",
+            "jsdoc/require-returns": "off",
+            "jsdoc/require-jsdoc": ["warn", {
+                    "enableFixer": false,
+                    "require": {
+                        "ArrowFunctionExpression": false,
+                        "ClassDeclaration": true,
+                        "ClassExpression": true,
+                        "FunctionDeclaration": true,
+                        "FunctionExpression": true,
+                        "MethodDefinition": true
+                    }
+                }
+            ]
+        },
+        linterOptions: {
+            "reportUnusedDisableDirectives": "off",
+            "reportUnusedInlineConfigs": "off"
         },
     },
     // Load at the end
