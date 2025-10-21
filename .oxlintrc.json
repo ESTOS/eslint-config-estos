@@ -1,5 +1,18 @@
 {
 	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"ignorePatterns": [
+		"node_modules",
+		"dist",
+		"build",
+		"built",
+		"coverage",
+		"*.md",
+		"doc",
+		"**/ucc_api/public",
+		"**/ucc_api/swagger_global",
+		"**/ucc_api/app/asninterfaces",
+		"**/public"
+	],
 	"plugins": [
 		"typescript",
 		"jsdoc",
@@ -138,7 +151,7 @@
 			}
 		],
 		"block-scoped-var": "error",
-		"curly": "off",
+		"curly": "error",
 		"no-nested-ternary": "error",
 		"no-self-compare": "error",
 		"no-var": "error",
